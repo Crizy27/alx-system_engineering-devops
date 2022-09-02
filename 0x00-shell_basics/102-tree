@@ -1,2 +1,2 @@
 #!/bin/bash
-cat /tmp/userlist
+mkdir -p welcome/to/school
