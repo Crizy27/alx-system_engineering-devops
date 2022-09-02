@@ -1,2 +1,2 @@
 #!/bin/bash
-mv src/*[A-Z]* target/
+/tmp/u mv scr/*[A-Z]* target/
