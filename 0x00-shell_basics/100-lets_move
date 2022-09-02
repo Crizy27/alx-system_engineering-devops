@@ -1,2 +1,2 @@
 #!/bin/bash
-/tmp/u mv scr/*[A-Z]* target/
+mv [A-Z]* /tmp/u
