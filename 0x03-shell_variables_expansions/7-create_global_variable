@@ -1,2 +1,2 @@
 #!/bin/bash
-expert SCHOOL="Best"
+export SCHOOL="Betty"
