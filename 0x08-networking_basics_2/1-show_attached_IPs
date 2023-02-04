@@ -1,12 +1,5 @@
-#!/bin/bash/env bash
+#!/usr/bin/env bash
+#script for show IPV4 IPs
 
-# Get the list of network interfaces
-interfaces=$(ip -o -4 addr show | awk '{print $2}')
+ifconfig | grep -e "inet addr" | cut -d ":" -f2 | cut -d ' ' -f1
 
-# Loop through the interfaces
-for interface in $interfaces; do
-  # Get the IPv4 address for each interface
-  ipv4=$(ip -o -4 addr show $interface | awk '{print $4}' | cut -d/ -f1)
-  # Print the IPv4 address
-  echo $ipv4
-done
